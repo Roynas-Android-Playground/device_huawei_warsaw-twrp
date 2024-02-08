@@ -6,7 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_warsaw.mk
+    $(LOCAL_DIR)/twrp_warsaw.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_warsaw-eng
+    twrp_warsaw-eng
