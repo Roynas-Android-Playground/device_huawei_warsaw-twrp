@@ -1,23 +1,24 @@
-/product       ext4 /dev/block/platform/hi_mci.0/by-name/product  flags=backup=1;wipeingui;display="Product"
-/product_image emmc /dev/block/platform/hi_mci.0/by-name/product  flags=backup=1;flashimg;display="Product Image"
-/system_root   ext4 /dev/block/platform/hi_mci.0/by-name/system  flags=backup=1;wipeingui;display="System"
-/system_image  emmc /dev/block/platform/hi_mci.0/by-name/system  flags=backup=1;flashimg;display="System Image"
-/vendor        ext4 /dev/block/platform/hi_mci.0/by-name/vendor  flags=backup=1;wipeingui;display="Vendor"
-/vendor_image  emmc /dev/block/platform/hi_mci.0/by-name/vendor  flags=backup=1;flashimg;display="Vendor Image"
+/product        ext4    /dev/block/platform/hi_mci.0/by-name/product  flags=backup=1;wipeingui;display="Product"
+/product_image  emmc    /dev/block/platform/hi_mci.0/by-name/product  flags=backup=1;flashimg;display="Product Image"
+/system_root    ext4    /dev/block/platform/hi_mci.0/by-name/system  flags=backup=1;wipeingui;display="System"
+/system_image   emmc    /dev/block/platform/hi_mci.0/by-name/system  flags=backup=1;flashimg;display="System Image"
+/vendor         ext4    /dev/block/platform/hi_mci.0/by-name/vendor  flags=backup=1;wipeingui;display="Vendor"
+/vendor_image   emmc    /dev/block/platform/hi_mci.0/by-name/vendor  flags=backup=1;flashimg;display="Vendor Image"
 
-/rd		emmc	/dev/block/platform/hi_mci.0/by-name/ramdisk	 flags=backup=1;display="Boot Ramdisk";flashimg=1
-/recovery_rd	emmc	/dev/block/platform/hi_mci.0/by-name/recovery_ramdisk	flags=backup=1;display="Recovery Ramdisk"
-/kernel		emmc    /dev/block/platform/hi_mci.0/by-name/kernel      flags=backup=1;display="Boot/Recovery Kernel";flashimg=1
-/erec_rd        emmc    /dev/block/platform/hi_mci.0/by-name/erecovery_ramdisk     flags=backup=1;display="ERecovery Ramdisk";flashimg=1
-/erec_kernel    emmc    /dev/block/platform/hi_mci.0/by-name/erecovery_kernel      flags=backup=1;display="ERecovery Kernel";flashimg=1
+/rd		emmc	/dev/block/platform/hi_mci.0/by-name/ramdisk	           flags=backup=1;display="Boot Ramdisk";flashimg=1
+/recovery_rd	emmc	/dev/block/platform/hi_mci.0/by-name/recovery_ramdisk	   flags=backup=1;display="Recovery Ramdisk"
+/kernel		emmc    /dev/block/platform/hi_mci.0/by-name/kernel                flags=backup=1;display="Boot/Recovery Kernel";flashimg=1
+/erec_rd        emmc    /dev/block/platform/hi_mci.0/by-name/erecovery_ramdisk     flags=backup=1;display="eRecovery Ramdisk";flashimg=1
+/erec_kernel    emmc    /dev/block/platform/hi_mci.0/by-name/erecovery_kernel      flags=backup=1;display="eRecovery Kernel";flashimg=1
 
 /vbmeta         emmc    /dev/block/platform/hi_mci.0/by-name/vbmeta                flags=backup=1;display="Vbmeta";flashimg=1
 /rec_vbmeta     emmc    /dev/block/platform/hi_mci.0/by-name/recovery_vbmeta       flags=backup=1;display="Recovery Vbmeta";flashimg=1
-/erec_vbmeta    emmc    /dev/block/platform/hi_mci.0/by-name/erecovery_vbmeta       flags=backup=1;display="ERecovery Vbmeta";flashimg=1
+/erec_vbmeta    emmc    /dev/block/platform/hi_mci.0/by-name/erecovery_vbmeta      flags=backup=1;display="eRecovery Vbmeta";flashimg=1
+/oeminfo        emmc    /dev/block/platform/hi_mci.0/by-name/oeminfo               flags=display="OEM Info";backup=1;flashimg
 
-/data		ext4	/dev/block/platform/hi_mci.0/by-name/userdata
-/cache		ext4	/dev/block/platform/hi_mci.0/by-name/cache	flags=backup=0;display="Cache"
+/data	        ext4    /dev/block/platform/hi_mci.0/by-name/userdata
+/cache	        ext4    /dev/block/platform/hi_mci.0/by-name/cache                 flags=backup=0;display="Cache"
 
 # Removable storage
-/external_sd	vfat	/dev/block/mmcblk1p1	/dev/block/mmcblk1		flags=storage;wipeingui;removable
-/usb-otg	vfat	/dev/block/sda1		/dev/block/sda			flags=display="USB-OTG";storage;wipeingui;removable
+/external_sd    vfat    /dev/block/mmcblk1p1    /dev/block/mmcblk1                 flags=storage;wipeingui;removable
+/usb-otg        vfat    /dev/block/sda1	        /dev/block/sda                     flags=display="USB-OTG";storage;wipeingui;removable
